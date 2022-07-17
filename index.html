@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock XD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Smooch&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet"></head>
+<body>
+  <div id="icon">
+    <img src="clock_logo.png"  alt=" no item">
+    <div id="main">
+      <div id="box">
+        <span class="time">TIME</span>
+        <span class="hours">
+          <div id="hours">00</div>
+        <div id="hrs">hours</div>
+        </span>
+        <span class="col">:</span>
+        <span class="minutes">
+          <div id="minutes">00</div>
+        <div id="mins">mins</div>
+        </span>
+        <span class="col2">:</span>
+        <span class="seconds">
+          <div id="seconds">00</div>
+        <div id="secs">secs</div>
+        </span> 
+        <span id="session">AM</span>
+      </div>
+      <div id="box1"></div>
+      <div id="box2"></div>
+
+    </div>
+  </div>
+<!----------Timing and use ful text-------------------------------------------------------->
+  
+  <div class="container">
+    <div class="con">
+      <div class="set">
+        <img src="wake_up.png"  alt="no item" id="wakeup">
+      <div id="no1">Set wake up time</div>
+      <form name="wakeup">
+        <select name="timing" id="timing">
+          <option value="8 AM -  9 AM">  8 AM -  9 AM</option>
+          <option value="9 AM - 10 AM">  9 AM - 10 AM</option>
+          <option value="10 AM - 11 AM">10 AM - 11 AM</option>
+          <option value="11 AM - 12 PM">11 AM - 12 PM</option>
+        </select>
+      </form>
+      
+      </div>
+      <div class="line"></div>
+      <div class="set">
+        <img src="lunch_time.png"  alt="no item" id="wakeup">
+      <div id="no1">Set lunch time</div>
+      <form name="lunch">
+        <select name="timing1" id="timing1">
+          <option value="12 PM - 1 PM"> 12 PM - 1 PM</option>
+          <option value="1 PM - 2 PM">   1 PM - 2 PM</option>
+          <option value=" 2 PM - 3 PM">  2 PM - 3 PM</option>
+          <option value="3 PM - 4 PM">   3 PM - 4 PM</option>
+        </select>
+      </form>
+      
+      </div>
+      <div class="line"></div>
+      <div class="set">
+        <img src="nap_time.png"  alt="no item" id="wakeup">
+      <div id="no1">Set nap time</div>
+      <form name="naptime">
+        <select name="timing2" id="timing2">
+          <option value=" 3 PM - 4 PM"> 3 PM - 4 PM</option>
+          <option value="4 PM - 5 PM">  4 PM - 5 PM</option>
+          <option value="5 PM - 6 PM">  5 PM - 6 PM</option>
+          <option value="6 PM - 7 PM">  6 PM - 7 PM</option>
+        </select>
+      </form>
+     
+      </div>
+      <div class="line"></div>
+      <div class="set">
+        <img src="nap.png"  alt="no item" id="wakeup">
+      <div id="no1">Set night time</div>
+      <form name="nap">
+        <select name="timing3" id="timing3">
+          <option value="6 PM - 7 PM">  6 PM - 7 PM</option>
+          <option value="7 PM - 8 PM">  7 PM - 8 PM</option>
+          <option value="8 PM - 9 PM">  8 PM - 9 PM</option>
+          <option value="9 PM - 10 PM"> 9 PM - 10 PM</option>
+
+        </select>
+      </form>
+      
+      </div>
+     
+      
+    </div>
+  <div id="text1"> set your Timings??</div>
+  </div>
+  <!-------------------Background images view------------------------------------------------------------------>
+  <img src="Component 30 – 1.png" alt="no items" id="img">
+  <!---------------------------------Wishes and button---------------------------------------------------->
+  <div id="text"> set your Timings??</div>
+  <div class="con1">
+    <button onclick="alarmTimings()" class="button"><span class="but">Set Alarm</span></button>
+    <div id="con">
+        <div id="one">Wake Up Time :<span id="wakeuptime">Not Selected</span></div>
+        <div id="one">Lunch Time   :<span id="lunchtime">Not Selected</span></div>
+        <div id="one">Nap Time     :<span id="naptime">Not Selected</span></div>
+        <div id="one">Night Time   :<span id="nighttime">Not Selected</span></div>
+    </div>
+  </div>
+  
+  
+
+    <script src="index.js"></script>
+</body>
+</html>
