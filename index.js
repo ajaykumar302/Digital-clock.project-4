@@ -43,45 +43,45 @@ function alarmTimings(){
 
 
 
-    if (time == wakeUpTime) {
+    if (time === wakeUpTime) {
         document.getElementById("text").innerText = "GOOD MORNING!! WAKE UP !!";
-    } else if (time == lunchTime) {
+    } else if (time === lunchTime) {
         document.getElementById("text").innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP";
-    } else if (time == napTime) {
+    } else if (time === napTime) {
         document.getElementById("text").innerText = "GOOD EVENING !!";
-    } else if (time == nightTime) {
+    } else if (time === nightTime) {
         document.getElementById("text").innerText = "GOOD NIGHT !!";
     } else {
-        document.getElementById("text").innerText = "It's getting late!! Go To Bed !!";
+        document.getElementById("text").innerText = "It's getting late!!";
     }
 
 
 
     //right side Message according to time ==========================================
 
-    if (time == wakeUpTime) {
+    if (time === wakeUpTime) {
         document.getElementById("text1").innerText = "GRAB SOME HEALTHY BREAKFAST!!!";
-    } else if (time == lunchTime) {
+    } else if (time === lunchTime) {
         document.getElementById("text1").innerText = "LET'S HAVE SOME LUNCH !!";
-    } else if (time == napTime) {
+    } else if (time === napTime) {
         document.getElementById("text1").innerText = "STOP YAWNING, GET SOME TEA.. ITS JUST EVENING!";
-    } else if (time == nightTime) {
+    } else if (time === nightTime) {
         document.getElementById("text1").innerText = "CLOSE YOUR EYES AND GO TO SLEEP";
     } else {
-        document.getElementById("text1").innerText = "It's getting late!!It's Time To Bed !!";
+        document.getElementById("text1").innerText = "It's getting late!!";
     }
  // Changing Image according to time ===============================================
 
- if (time == wakeUpTime) {
+ if (time === wakeUpTime) {
     document.getElementById("img").src = "Component 30 – 1.png";
-} else if (time == lunchTime) {
+} else if (time === lunchTime) {
     document.getElementById("img").src = "Component 31 – 1.png";
-} else if (time == napTime) {
+} else if (time === napTime) {
     document.getElementById("img").src = "lunch_image.png";
-} else if (time == nightTime) {
+} else if (time === nightTime) {
     document.getElementById("img").src = "Component 32 – 1.png";
 } else {
-    document.getElementById("img").src = "Component 32 – 1.png";
+    document.getElementById("img").src = "Component 30 – 1.png";
 }
 
 }
